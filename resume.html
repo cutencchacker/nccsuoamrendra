@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume & Documents - Amrrendra Kumar | Download Resume and Project Reports">
+    <meta name="keywords" content="Amrrendra Kumar, Resume, CV, Documents, Portfolio">
+    <meta name="author" content="Amrrendra Kumar">
+    <title>Resume & Documents | Amrrendra Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">AK</span>
+                    <span class="logo-name">Amrrendra Kumar</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Resume & Documents</h1>
+            <p class="page-subtitle">Download my resume and project documentation</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-content">
+                <!-- Resume Download Card -->
+                <div class="resume-download-card">
+                    <div class="document-icon" style="margin: 0 auto 1.5rem;">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h2>My Resume / CV</h2>
+                    <p>Download my latest resume in PDF format. Updated with current projects, skills, and achievements.</p>
+                    <!-- Yahan apni PDF file rakhne ka path: assets/resume/Amrrendra-Kumar-Resume.pdf -->
+                    <!-- Step: assets/resume/ folder me apni resume PDF daaliye, fir niche href ko us naam se set kar dijiye -->
+                    <a href="assets/resume/Amrrendra-Kumar-Resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume (PDF)
+                    </a>
+                </div>
+
+                <!-- Project Reports -->
+                <div class="section-block">
+                    <h2 class="section-title">Project Reports & Documentation</h2>
+                    <p class="section-text" style="margin-bottom: 2rem;">
+                        Yahan aap apne project reports ke PDF add kar sakte hain. File ko <strong>assets/reports/</strong> folder me rakhein 
+                        aur niche cards me <code>href</code> us PDF ke path se replace kar dein.
+                    </p>
+                    <div class="documents-grid">
+                        <a href="report-ecommerce.html" class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>E-Commerce Web Application</h3>
+                            <p>System design, database schema, implementation details</p>
+                        </a>
+                        <a href="report-ai-classifier.html" class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>AI Image Classifier</h3>
+                            <p>Model architecture, training pipeline, accuracy report</p>
+                        </a>
+                        <a href="report-iot-home-automation.html" class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>IoT Home Automation</h3>
+                            <p>Circuit diagrams, device control flow, implementation guide</p>
+                        </a>
+                        <a href="report-student-management.html" class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>Student Management System</h3>
+                            <p>Database design, features, workflows</p>
+                        </a>
+                        <a href="report-network-security-scanner.html" class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>Network Security Scanner</h3>
+                            <p>Testing methodology, scan findings, remediation notes</p>
+                        </a>
+                        <a href="report-password-manager.html" class="document-card">
+                            <div class="document-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>Password Manager</h3>
+                            <p>Encryption design, UI flows, security notes</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Academic Documents -->
+                <div class="section-block">
+                    <h2 class="section-title">Academic Certificates</h2>
+                    <p class="section-text" style="margin-bottom: 2rem;">
+                        Educational certificates and academic achievements.
+                    </p>
+                    <div class="documents-grid">
+                        <a href="#" class="document-card" onclick="alert('Certificate will be available soon!'); return false;">
+                            <div class="document-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>10th Standard Certificate</h3>
+                            <p>High School Dhankutwa, Bihar (2021)</p>
+                        </a>
+                        <a href="#" class="document-card" onclick="alert('Certificate will be available soon!'); return false;">
+                            <div class="document-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Diploma in CSE</h3>
+                            <p>Jagannath University, Jaipur (2023-2026)</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact for Documents -->
+                <div class="section-block" style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); text-align: center;">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">Need a Document?</h2>
+                    <p class="section-text" style="margin-bottom: 1.5rem;">
+                        If you need any specific document or have questions about my qualifications, 
+                        please feel free to contact me.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amrrendra Kumar</h3>
+                    <p>Student Developer passionate about technology and innovation.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/ncc-suo-amrendra-1771b7241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/AmrendraCrpf?s=09" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/cutencchacker" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/people/Suo-Amrendra-Paswan/61582040948357/#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://instagram.com/thedisciplinecoder/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%A6%E0%A4%B8%E0%A5%8D%E0%A4%AF:Hacker_Amrendra" target="_blank" aria-label="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> kumaramrendra87761@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9117484569</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amrrendra Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

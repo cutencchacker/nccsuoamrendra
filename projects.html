@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Amrrendra Kumar - Web Development, AI, Hardware, Academic & Security Projects">
+    <meta name="keywords" content="Amrrendra Kumar, Projects, Portfolio, Web Development, AI, Hardware">
+    <meta name="author" content="Amrrendra Kumar">
+    <title>Projects | Amrrendra Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">AK</span>
+                    <span class="logo-name">Amrrendra Kumar</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">Explore my work across different domains and technologies</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="projects-filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="projectSearch" placeholder="Search projects by name or technology...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fas fa-th"></i> All
+                    </button>
+                    <button class="filter-btn" data-category="web">
+                        <i class="fas fa-code"></i> Web Development
+                    </button>
+                    <button class="filter-btn" data-category="ai">
+                        <i class="fas fa-brain"></i> AI Projects
+                    </button>
+                    <button class="filter-btn" data-category="hardware">
+                        <i class="fas fa-microchip"></i> Hardware
+                    </button>
+                    <button class="filter-btn" data-category="academic">
+                        <i class="fas fa-graduation-cap"></i> Academic
+                    </button>
+                    <button class="filter-btn" data-category="security">
+                        <i class="fas fa-shield-alt"></i> Security
+                    </button>
+                </div>
+            </div>
+            <div class="projects-count">
+                <span id="projectCount">25</span> projects found · All major projects are currently <strong>Under Development</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+            <div class="no-projects" id="noProjects" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amrrendra Kumar</h3>
+                    <p>Student Developer passionate about technology and innovation.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/ncc-suo-amrendra-1771b7241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/AmrendraCrpf?s=09" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/cutencchacker" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/people/Suo-Amrendra-Paswan/61582040948357/#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://instagram.com/thedisciplinecoder/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%A6%E0%A4%B8%E0%A5%8D%E0%A4%AF:Hacker_Amrendra" target="_blank" aria-label="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/ncc-suo-amrendra-1771b7241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/AmrendraCrpf?s=09" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/cutencchacker" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/people/Suo-Amrendra-Paswan/61582040948357/#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://instagram.com/thedisciplinecoder/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%A6%E0%A4%B8%E0%A5%8D%E0%A4%AF:Hacker_Amrendra" target="_blank" aria-label="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> kumaramrendra87761@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 9117484569</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amrrendra Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="projects-data.js"></script>
+</body>
+</html>
+

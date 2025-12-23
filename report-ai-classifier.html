@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report | AI Image Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">AK</span>
+                    <span class="logo-name">Amrrendra Kumar</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">AI Image Classifier</h1>
+            <p class="page-subtitle">Project report: model design, training pipeline, evaluation</p>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <div class="container resume-content">
+            <div class="section-block">
+                <h2 class="section-title">Overview</h2>
+                <p class="section-text">
+                    Deep learning image classifier that categorizes images into target classes using CNN-based architecture.
+                </p>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Objectives</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Achieve >90% accuracy on validation set.</li>
+                    <li>Provide simple web UI for inference.</li>
+                    <li>Enable reproducible training pipeline.</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Architecture & Stack</h2>
+                <div class="tech-stack-list">
+                    <span class="tech-stack-item">Python</span>
+                    <span class="tech-stack-item">TensorFlow/Keras</span>
+                    <span class="tech-stack-item">OpenCV</span>
+                    <span class="tech-stack-item">NumPy/Pandas</span>
+                    <span class="tech-stack-item">Flask (UI)</span>
+                </div>
+                <p class="section-text">CNN backbone with augmentation; optional transfer learning from pretrained models.</p>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Training Pipeline</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Data cleaning, label balancing, train/val split.</li>
+                    <li>Augmentations: flip, rotate, shift, brightness.</li>
+                    <li>Optimizer: Adam; Loss: categorical cross-entropy.</li>
+                    <li>Callbacks: early stopping, LR scheduler, checkpoints.</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Evaluation</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Metrics: Accuracy, Precision/Recall, F1.</li>
+                    <li>Confusion matrix for per-class insights.</li>
+                    <li>Grad-CAM (planned) for interpretability.</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Deployment</h2>
+                <p class="section-text">Lightweight Flask UI for uploading an image and getting predictions; can be containerized.</p>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Future Work</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Quantization for edge devices.</li>
+                    <li>Better augmentation with AutoAugment.</li>
+                    <li>On-device inference (TensorFlow Lite).</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <a href="assets/reports/ai-image-classifier.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-file-download"></i> Download Full PDF
+                </a>
+                <a href="resume.html" class="btn btn-secondary" style="margin-left: 0.75rem;">
+                    <i class="fas fa-arrow-left"></i> Back to Reports
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amrrendra Kumar</h3>
+                    <p>Student Developer passionate about technology and innovation.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/ncc-suo-amrendra-1771b7241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/AmrendraCrpf?s=09" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/cutencchacker" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/people/Suo-Amrendra-Paswan/61582040948357/#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://instagram.com/thedisciplinecoder/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%A6%E0%A4%B8%E0%A5%8D%E0%A4%AF:Hacker_Amrendra" target="_blank" aria-label="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amrrendra Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

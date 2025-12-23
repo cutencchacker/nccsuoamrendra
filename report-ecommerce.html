@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report | E-Commerce Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-text">AK</span>
+                    <span class="logo-name">Amrrendra Kumar</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">E-Commerce Web Application</h1>
+            <p class="page-subtitle">Project report: overview, architecture, flows, and learnings</p>
+        </div>
+    </section>
+
+    <section class="resume-section">
+        <div class="container resume-content">
+            <div class="section-block">
+                <h2 class="section-title">Overview</h2>
+                <p class="section-text">
+                    Full-stack e-commerce platform with user accounts, product catalog, cart, checkout, and admin controls.
+                </p>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Objectives</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Deliver fast, mobile-first shopping experience.</li>
+                    <li>Support secure checkout and order tracking.</li>
+                    <li>Provide admin CRUD for products, categories, and orders.</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Architecture</h2>
+                <p class="section-text">SPA frontend + REST backend + database.</p>
+                <div class="tech-stack-list">
+                    <span class="tech-stack-item">HTML/CSS/JS</span>
+                    <span class="tech-stack-item">Node.js/Express</span>
+                    <span class="tech-stack-item">MongoDB</span>
+                    <span class="tech-stack-item">JWT Auth</span>
+                    <span class="tech-stack-item">Stripe/Paytm (placeholder)</span>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-list">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Product catalog with search & filters</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Cart, wishlist, checkout flow</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Order history & tracking</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Admin dashboard (products, orders, users)</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i><span>Role-based access control</span></div>
+                </div>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Implementation Notes</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Catalog search via indexed fields; pagination for large lists.</li>
+                    <li>JWT-based session; password hashing; basic rate limits.</li>
+                    <li>Order pipeline: cart → address → payment intent → confirmation.</li>
+                    <li>Admin: CRUD + bulk upload via CSV (planned).</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Testing & Quality</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Unit tests for utils (prices, taxes, discounts).</li>
+                    <li>Integration tests for auth and checkout routes.</li>
+                    <li>Manual QA on responsive breakpoints.</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h2 class="section-title">Future Work</h2>
+                <ul class="section-text" style="list-style: disc; padding-left: 1.25rem;">
+                    <li>Inventory sync with barcode scanners.</li>
+                    <li>Coupons, referrals, and loyalty points.</li>
+                    <li>Recommendation engine (collaborative filtering).</li>
+                    <li>Full payments integration (live keys).</li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <a href="assets/reports/ecommerce-report.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-file-download"></i> Download Full PDF
+                </a>
+                <a href="resume.html" class="btn btn-secondary" style="margin-left: 0.75rem;">
+                    <i class="fas fa-arrow-left"></i> Back to Reports
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Amrrendra Kumar</h3>
+                    <p>Student Developer passionate about technology and innovation.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/ncc-suo-amrendra-1771b7241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/AmrendraCrpf?s=09" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/cutencchacker" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/people/Suo-Amrendra-Paswan/61582040948357/#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://instagram.com/thedisciplinecoder/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A4%A6%E0%A4%B8%E0%A5%8D%E0%A4%AF:Hacker_Amrendra" target="_blank" aria-label="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Amrrendra Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -56,7 +56,7 @@ if (window.location.pathname.includes('project-detail.html')) {
 
         // Update page title
         if (projectTitle) {
-            projectTitle.textContent = `${project.title} | Amrrendra Kumar`;
+            projectTitle.textContent = `${project.title} | Amrendra Kumar`;
         }
 
         // Render project details
